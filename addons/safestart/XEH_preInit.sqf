@@ -3,24 +3,33 @@ ADDON = false;
 #include "XEH_PREP.hpp"
 
 GVAR(aceSafemode)= isClass (configFile >> "CfgPatches" >> "ace_safemode");
+GVAR(warningGrenadeConfirmed) = profileNamespace getVariable [QGVAR(warningGrenadeConfirmed), false];
 
 #include "initSettings.sqf"
 
-[QGVAR(enableSafety), {
-    params ["_player"];
+if (hasInterface) then {
 
-    [_player] call FUNC(lowerWeapon);
+    [QGVAR(enableSafety), {
+        params ["_player"];
 
-    if (GVAR(aceSafemode) && {GVAR(startLocked)}) then {
-        [_player, currentWeapon _player, true] call ACEFUNC(safemode,setWeaponSafety);
-    };
-}] call CBA_fnc_addEventHandler;
+        [_player] call FUNC(lowerWeapon);
 
-[QGVAR(lowerWeapon), {
-    params ["_unit"];
+        if (GVAR(aceSafemode) && {GVAR(startLocked)}) then {
+            [_player, currentWeapon _player, true] call ACEFUNC(safemode,setWeaponSafety);
+        };
 
-    _unit action ["WeaponOnBack", _unit];
+        if (DIK_G in actionKeys "Throw" && {!GVAR(warningGrenadeConfirmed)}) then {
+            [] call FUNC(warnGrenade);
+        };
 
-}] call CBA_fnc_addEventHandler;
+    }] call CBA_fnc_addEventHandler;
+
+    [QGVAR(lowerWeapon), {
+        params ["_unit"];
+
+        _unit action ["WeaponOnBack", _unit];
+
+    }] call CBA_fnc_addEventHandler;
+};
 
 ADDON = true;
