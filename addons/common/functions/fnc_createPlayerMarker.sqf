@@ -6,6 +6,7 @@
  * Arguments:
  * 0: Marker position <ARRAY, OBJECT>
  * 1: Channel to create marker on <STRING, NUMBER>
+ * 2: Marker owner <OBJECT>
  *
  * Return Value:
  * Marker ID, empty string if could not create <STRING>
@@ -22,7 +23,8 @@
 
 params [
     ["_position", [0,0,0], [[], objNull]],
-    ["_channel", 1, [0, ""]]
+    ["_channel", 1, [0, ""]],
+    ["_owner", objNull, [objNull]
 ];
 
 if (_channel isEqualType "") then {
@@ -41,4 +43,4 @@ GVAR(playerMarkerIdx) = GVAR(playerMarkerIdx) + 1;
 
 private _markerId = format ["_USER_DEFINED #%1/%2/%3", GVAR(clientId), _id, _channel];
 
-createMarker [_markerId, _position] // return
+createMarker [_markerId, _position, _channel, _owner] // return
