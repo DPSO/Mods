@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="AFM">
+<Project name="DPSO">
     <Package name="Main_Menu">
-        <Key ID="STR_AFM_Main_Menu_SpotlightHeader">
-            <English>ArmaForces</English>
+        <Key ID="STR_dpso_afm_main_menu_SpotlightHeader">
+            <English>DPSO</English>
         </Key>
-        <Key ID="STR_AFM_Main_Menu_SpotlightJoin">
+        <Key ID="STR_dpso_afm_main_menu_SpotlightJoin">
             <English>Join</English>
             <Polish>Dołącz</Polish>
         </Key>
-        <Key ID="STR_AFM_Main_Menu_AdminLogin">
+        <Key ID="STR_dpso_afm_main_menu_AdminLogin">
             <English>Admin Login</English>
             <Polish>Admin Zaloguj</Polish>
         </Key>
-        <Key ID="STR_AFM_Main_Menu_AdminLogout">
+        <Key ID="STR_dpso_afm_main_menu_AdminLogout">
             <English>Admin Logout</English>
             <Polish>Admin Wyloguj</Polish>
         </Key>
-        <Key ID="STR_AFM_Main_Menu_PasswordPlaceholder">
+        <Key ID="STR_dpso_afm_main_menu_PasswordPlaceholder">
             <English>Password</English>
             <Polish>Hasło</Polish>
         </Key>
-        <Key ID="STR_AFM_Main_Menu_Missions">
+        <Key ID="STR_dpso_afm_main_menu_Missions">
             <English>Missions</English>
             <Polish>Misje</Polish>
         </Key>

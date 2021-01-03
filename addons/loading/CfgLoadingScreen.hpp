@@ -1,28 +1,26 @@
 #define LOADING_SCREEN_CLASS(className,authorName) \
     class className { \
         author = QUOTE(authorName); \
-        path = QPATHTOF(ui\loading\##className##_co.paa); \
+        path = QPATHTOF(ui\loading\##className##.paa); \
     }
 
 class GVAR(CfgLoadingScreen) {
     class Backgrounds {
-        LOADING_SCREEN_CLASS(cup_0,ARR_2(Norek, WINDOWS_95_SE));
-        LOADING_SCREEN_CLASS(gm_0,Mikkeboss);
-        LOADING_SCREEN_CLASS(ifa_0,Mikkeboss);
-        LOADING_SCREEN_CLASS(ifa_1,Krystol);
-        LOADING_SCREEN_CLASS(ifa_2,veteran29);
-        LOADING_SCREEN_CLASS(rhs_0,Monk[e]y);
-        LOADING_SCREEN_CLASS(rhs_1,ARR_2(Mikkeboss, JurijPietrowicz));
-        LOADING_SCREEN_CLASS(rhs_2,Mikkeboss);
-        LOADING_SCREEN_CLASS(rhs_3,Monk[e]y);
-        LOADING_SCREEN_CLASS(rhs_4,ARR_2(Norek, Nomus));
-        LOADING_SCREEN_CLASS(rhs_5,Bolec);
-        LOADING_SCREEN_CLASS(rhs_6,Bolec);
-        LOADING_SCREEN_CLASS(vanilla_0,Monk[e]y);
-        LOADING_SCREEN_CLASS(other_0,Monk[e]y);
-        LOADING_SCREEN_CLASS(other_1,Monk[e]y);
-        LOADING_SCREEN_CLASS(unsung_0,WINDOWS_95_SE);
-        LOADING_SCREEN_CLASS(unsung_1,3Mydlo3);
-        LOADING_SCREEN_CLASS(postapo_0,Monk[e]y);
+        LOADING_SCREEN_CLASS(AdobeStock_269676636,YonV);
+        LOADING_SCREEN_CLASS(AdobeStock_269676677,YonV);
+        LOADING_SCREEN_CLASS(AdobeStock_271859839,YonV);
+        LOADING_SCREEN_CLASS(AdobeStock_285905473,YonV);
+        LOADING_SCREEN_CLASS(AdobeStock_296841733,YonV);
+        LOADING_SCREEN_CLASS(AdobeStock_297308106,YonV);
+        LOADING_SCREEN_CLASS(AdobeStock_298480575,YonV);
+        LOADING_SCREEN_CLASS(AdobeStock_361616315,YonV);
+        LOADING_SCREEN_CLASS(AdobeStock_287796119,YonV);
+        LOADING_SCREEN_CLASS(AdobeStock_288887578,YonV);
+        LOADING_SCREEN_CLASS(AdobeStock_319048089,YonV);
+        LOADING_SCREEN_CLASS(maxresdefault,YonV);
+        LOADING_SCREEN_CLASS(AdobeStock_269677107,YonV);
+        LOADING_SCREEN_CLASS(AdobeStock_272813407,YonV);
+        LOADING_SCREEN_CLASS(AdobeStock_275306051,YonV);
+        LOADING_SCREEN_CLASS(AdobeStock_283924597,YonV);
     };
 };

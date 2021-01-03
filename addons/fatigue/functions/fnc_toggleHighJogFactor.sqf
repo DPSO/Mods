@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [true] call afm_fatigue_fnc_toggleHighJogFactor
+ * [true] call dpso_fatigue_fnc_toggleHighJogFactor
  *
  * Public: No
  */

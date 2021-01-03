@@ -20,8 +20,8 @@
 #define ACELSTRING(module,string)   QUOTE(TRIPLES(STR,DOUBLES(ACE_PREFIX,module),string))
 #define ACECSTRING(module,string)   QUOTE(TRIPLES($STR,DOUBLES(ACE_PREFIX,module),string))
 
-// AFM macros
+// DPSO macros
 #define IS_MOD_LOADED(modclass)     (isClass (configFile >> "CfgPatches" >> #modclass))
 
-// AFM Debug macros
-#include "\z\afm\addons\main\script_debug.hpp"
+// DPSO Debug macros
+#include "\z\dpso_afm\addons\main\script_debug.hpp"

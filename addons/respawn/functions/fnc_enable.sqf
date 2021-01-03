@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * call afm_respawn_fnc_enable
+ * call dpso_respawn_fnc_enable
  *
  * Public: No
  */

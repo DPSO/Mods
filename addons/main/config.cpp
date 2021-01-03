@@ -9,11 +9,11 @@ class CfgPatches {
         requiredAddons[] = {
             "cba_main"
         };
-        author = "ArmaForces";
+        author = "DPSO";
         VERSION_CONFIG;
     };
 };
 
 #include "CfgEden.hpp"
 #include "CfgModuleCategories.hpp"
-#include "DisplayEden.hpp"
+

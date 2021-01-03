@@ -7,10 +7,10 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "afm_main",
-            "afm_debug_console"
+            "dpso_afm_main",
+            "dpso_afm_debug_console"
         };
-        author = "ArmaForces";
+        author = "DPSO";
         VERSION_CONFIG;
     };
 };

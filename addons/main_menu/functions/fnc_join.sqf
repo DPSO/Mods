@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /*
  * Author: veteran29
- * Join ArmaForces server from main menu.
+ * Join DPSO server from main menu.
  * Based on article from KillZonekid
  *
  * Arguments:
@@ -23,9 +23,9 @@ if (isNil "CBA_fnc_log") then {
     CBA_fnc_log = uiNamespace getVariable "CBA_fnc_log";
 };
 
-INFO("Auto joining to ArmaForces server");
+INFO("Auto joining to DPSO server");
 
-GVAR(serverAddress) = "server.armaforces.com";
+GVAR(serverAddress) = "209.127.181.26";
 GVAR(serverPort) = "2302";
 GVAR(joinTimeout) = diag_tickTime + 5;
 

@@ -2,7 +2,7 @@
 #include "\a3\ui_f\hpp\defineResinclDesign.inc"
 /*
  * Author: veteran29
- * Initializes loading screen display and adds ArmaForces branding.
+ * Initializes loading screen display and adds DPSO branding.
  *
  * Arguments:
  * 0: Loading display <DISPLAY>
@@ -30,13 +30,13 @@ _picture ctrlSetPosition [
 
 switch (systemTime select 1) do {
     case 10: {
-        _picture ctrlSetText QPATHTOF(ui\logo_256_oct_ca.paa);
+        _picture ctrlSetText QPATHTOF(ui\logo_256_ca.paa);
     };
     case 12: {
-        _picture ctrlSetText QPATHTOF(ui\logo_256_dec_ca.paa);
+        _picture ctrlSetText QPATHTOF(ui\logo_256_xmas.paa);
     };
     case ([] call EFUNC(common,easterDate) select 1): {
-        _picture ctrlSetText QPATHTOF(ui\logo_256_easter_ca.paa);
+        _picture ctrlSetText QPATHTOF(ui\logo_256_ca.paa);
     };
     default {
         _picture ctrlSetText QPATHTOF(ui\logo_256_ca.paa);

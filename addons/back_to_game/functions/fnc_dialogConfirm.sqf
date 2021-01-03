@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * call afm_back_to_game_fnc_dialogConfirm
+ * call dpso_back_to_game_fnc_dialogConfirm
  *
  * Public: No
  */
