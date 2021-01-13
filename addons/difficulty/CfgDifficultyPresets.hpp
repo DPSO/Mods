@@ -1,10 +1,10 @@
 class CfgDifficultyPresets {
 
-    defaultPreset = QGVAR(Difficulty);
+    defaultPreset = "DPSO";
 
     class Custom;
-    class GVAR(Difficulty): Custom {
-        displayName = CSTRING(DifficultyName);
+    class DPSO: Custom {
+        displayName = "DPSO";
 
         description = "Custom difficulty for DPSO gameplay.";
         optionDescription = "Custom difficulty for DPSO gameplay.";
